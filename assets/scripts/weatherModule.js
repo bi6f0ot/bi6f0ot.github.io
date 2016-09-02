@@ -1,5 +1,5 @@
 var location2 = "Arcata, CA";
-var defaultLocation2 = "Arcata, CA";
+const defaultLocation2 = "Arcata, CA";
 
 function setWeatherModules(){
 	setWeather("Tulare, CA", 0);
