@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+    <head>
+		<title>Lilith</title>
+		<link rel="icon" href="./assets/images/ae.png" type="image/png">
+		<link href='https://fonts.googleapis.com/css?family=Lato:300,700,400' rel='stylesheet' type='text/css'>
+        <link rel="stylesheet" type="text/css" href="./assets/stylesheets/simpleWeather.css" />
+		<link rel="stylesheet" type="text/css" href="./assets/stylesheets/LilithStyles.css" />
+        <script src="https://code.jquery.com/jquery-2.1.4.js"></script>
+        <script src="./assets/scripts/jquery.simpleWeather.min.js"></script>
+        <script src="./assets/scripts/LilithScripts.js"></script>
+		<script src="./assets/scripts/weatherModule.js"></script>
+		<script src="./assets/scripts/clockModule.js"></script>
+		<meta charset="UTF-8">
+    </head>
+    <body>
+        <table class="widget_weather topleft" border=0>
+			<tr>
+				<td colspan="4" rowspan="4" class="graphic"></td>
+				<td colspan="2" rowspan="2" class="currTemp"></td>
+				<td colspan="2" class="tempUnits"></td>
+			</tr>
+			<tr>
+				<td colspan="2" class="todayHigh"></td>
+			</tr>
+			<tr>
+				<td class="forecastGraphic"></td>
+				<td class="forecastGraphic"></td>
+				<td class="forecastGraphic"></td>
+				<td class="forecastGraphic"></td>
+			</tr>
+			<tr>
+				<td class="forecastReading"></td>
+				<td class="forecastReading"></td>
+				<td class="forecastReading"></td>
+				<td class="forecastReading"></td>
+			</tr>
+			<tr>
+				<td colspan="8" class="city"></td>
+			</tr>
+		</table>
+		<table class="widget_weather topright" border=0>
+			<tr>
+				<td colspan="4" rowspan="4" class="graphic"></td>
+				<td colspan="2" rowspan="2" class="currTemp"></td>
+				<td colspan="2" class="tempUnits"></td>
+			</tr>
+			<tr>
+				<td colspan="2" class="todayHigh"></td>
+			</tr>
+			<tr>
+				<td class="forecastGraphic"></td>
+				<td class="forecastGraphic"></td>
+				<td class="forecastGraphic"></td>
+				<td class="forecastGraphic"></td>
+			</tr>
+			<tr>
+				<td class="forecastReading"></td>
+				<td class="forecastReading"></td>
+				<td class="forecastReading"></td>
+				<td class="forecastReading"></td>
+			</tr>
+			<tr>
+				<td colspan="8" class="city" style="cursor: pointer" onclick="changeCity();"></td>
+			</tr>
+		</table>
+		
+		<div class="clock">
+			<section id="date">
+				Thurs, Jan 1
+			</section>
+			<section id="time">
+				12:00 am
+			</section>
+		</div>
+	
+		<form class="searchForm" method="get" action="http://www.google.com/search" target="_blank">
+			<input type="text" class="googleBar" name="q" autocomplete="off" placeholder="Google...">
+		</form>
+		
+	</body>
+</html>
